@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeCraftHub: Your Learning Management Platform</title>
+```[cite: 1]
     <style>
       /* ===== Reset & Base ===== */
       *,
@@ -274,7 +275,7 @@
       }
 
       .btn-primary {
-        background: var(--primary);
+        background: #8B5CF6;
         color: var(--white);
       }
 
@@ -284,7 +285,7 @@
       }
 
       .btn-success {
-        background: var(--success);
+        background: #F59E0B;
         color: var(--white);
       }
 
@@ -1070,7 +1071,7 @@
             <td>
               <div class="action-buttons">
                 <button class="btn btn-ghost btn-sm" data-edit-id="$course.id">&#9998; Edit</button>
-                <button class="btn btn-danger btn-sm" data-delete-id="$course.id" data-delete-name="$escapeHtml(course.name)">&#128465; Remove</button>
+                <button class="btn-danger" onclick="handleDelete('${course.id}')">Remove</button>`
               </div>
             </td>
           </tr>
